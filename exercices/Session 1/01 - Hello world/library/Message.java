@@ -1,5 +1,5 @@
 package library;
 
 public class Message {
-    public static String content = "Hello wirld!";
+    public static String content = "Hello world!";
 }
