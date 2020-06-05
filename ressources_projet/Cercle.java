@@ -24,7 +24,7 @@ public class Cercle {
     }
 
     public String toXML(){
-        return ("<svg width='100%' height='100%' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>\n\t<circle cy='"+this.y+"' cx='"+this.x+"' r='"+this.r+"' style='fill:"+this.remplissage.toString()+";stroke:"+this.contour.toString()+"'>\n\t</circle>\n</svg>");
+        return ("<circle cy='"+this.y+"' cx='"+this.x+"' r='"+this.r+"' style='fill:"+this.remplissage.toString()+";stroke:"+this.contour.toString()+"'></circle>");
     }
 
     public Color getCouleurRemplissage(){
@@ -33,5 +33,9 @@ public class Cercle {
 
     public void changeRemplissage(Color nouvelle){
         this.remplissage = nouvelle;
+    }
+
+    public void changeContour(Color nouvelle){
+        this.contour = nouvelle;
     }
 }

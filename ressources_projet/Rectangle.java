@@ -17,7 +17,7 @@ public class Rectangle {
     }
 
     public String toXML(){
-        return ("<svg width='100%' height='100%' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>\n\t<rect y='"+this.y+"' x='"+this.x+"' height='"+this.height+"' width='"+this.width+"' style='fill:"+this.remplissage.toString()+";stroke:"+this.contour.toString()+"'>\n\t</rect>\n</svg>");
+        return ("<rect y='"+this.y+"' x='"+this.x+"' height='"+this.height+"' width='"+this.width+"' style='fill:"+this.remplissage.toString()+";stroke:"+this.contour.toString()+"'></rect>");
     }
 
     public Color getCouleurRemplissage(){
@@ -26,5 +26,9 @@ public class Rectangle {
 
     public void changeRemplissage(Color nouvelle){
         this.remplissage = nouvelle;
+    }
+
+    public void changeContour(Color nouvelle){
+        this.contour = nouvelle;
     }
 }
