@@ -9,7 +9,7 @@ public class App {
         x =10. ; y = 3. ; width = 10. ; height = 5. ; // À personnaliser !
         Rectangle rect = new Rectangle(x,y,width,height) ; 
         
-        System.out.println(rect) ; // Pas obligatoire
+        System.out.println(rect.toString()) ; // Pas obligatoire
         // redéfinir toString() pour que le rectangle puisse "se présenter" de façon lisible 
         // pour un humain peut être utile pour débugger.
 
