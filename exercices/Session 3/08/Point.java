@@ -11,4 +11,7 @@ class Point {
   public double getY() {
     return this.y;
   }
+  public String toJSONString(){
+    
+  }
 }
